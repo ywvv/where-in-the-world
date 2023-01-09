@@ -7,7 +7,7 @@ import { setSearch } from "../store/controls/controls-actions.js";
 
 const InputContainer = styled.label`
   background-color: var(--colors-ui-base);
-  padding: 1rem 2rem;
+  padding: 1rem;
   display: flex;
   align-items: center;
 

@@ -1,5 +1,6 @@
 {
   "name": "where-in-the-world",
+  "author": "Vlad Horban",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -11,6 +12,7 @@
   "dependencies": {
     "@babel/core": "^7.20.12",
     "axios": "^1.2.2",
+    "normalize.css": "^8.0.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-icons": "^4.7.1",
