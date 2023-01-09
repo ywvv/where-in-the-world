@@ -14,6 +14,7 @@ specifiers:
   react-router-dom: ^6.6.1
   react-select: ^5.7.0
   redux: ^4.2.0
+  redux-persist: ^6.0.0
   redux-thunk: ^2.4.2
   styled-components: ^5.3.6
   vite: ^4.0.0
@@ -29,6 +30,7 @@ dependencies:
   react-router-dom: 6.6.1_biqbaboplfbrettd7655fr4n2y
   react-select: 5.7.0_vwskmg7mzf6u2jufkkmcrhvxcm
   redux: 4.2.0
+  redux-persist: 6.0.0_react@18.2.0+redux@4.2.0
   redux-thunk: 2.4.2_redux@4.2.0
   styled-components: 5.3.6_7i5myeigehqah43i5u7wbekgba
 
@@ -1245,6 +1247,19 @@ packages:
     engines: {node: '>=0.10.0'}
     dependencies:
       loose-envify: 1.4.0
+    dev: false
+
+  /redux-persist/6.0.0_react@18.2.0+redux@4.2.0:
+    resolution: {integrity: sha512-71LLMbUq2r02ng2We9S215LtPu3fY0KgaGE0k8WRgl6RkqxtGfl7HUozz1Dftwsb0D/5mZ8dwAaPbtnzfvbEwQ==}
+    peerDependencies:
+      react: '>=16'
+      redux: '>4.0.0'
+    peerDependenciesMeta:
+      react:
+        optional: true
+    dependencies:
+      react: 18.2.0
+      redux: 4.2.0
     dev: false
 
   /redux-thunk/2.4.2_redux@4.2.0:
