@@ -6,12 +6,15 @@ const Wrapper = styled.article`
   box-shadow: var(--shadow);
   cursor: pointer;
   overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 `;
 
 const CardImage = styled.img`
   display: block;
   width: 100%;
-  height: 150px;
+  height: auto;
   object-fit: cover;
   object-position: center;
   box-shadow: var(--shadow);
