@@ -6,16 +6,20 @@ import { List } from "../components/List";
 import { Card } from "../components/Card";
 import { Controls } from "../components/Controls";
 import {
-  selectAllCountries,
   selectCountriesInfo,
+  selectVisibleCountries,
 } from "../store/countries/countries-selectors.js";
 import { loadCountries } from "../store/countries/countries-actions.js";
+import { selectSearch } from "../store/controls/controls-selectors.js";
 
 export const HomePage = () => {
   const navigate = useNavigate();
 
   const dispatch = useDispatch();
-  const countries = useSelector(selectAllCountries);
+  const search = useSelector(selectSearch);
+  const countries = useSelector((state) =>
+    selectVisibleCountries(state, { search })
+  );
   const { status, error, qty } = useSelector(selectCountriesInfo);
 
   useEffect(() => {
