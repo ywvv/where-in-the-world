@@ -24,5 +24,5 @@ export const loadCountries =
     client
       .get(api.ALL_COUNTRIES)
       .then(({ data }) => dispatch(setCountries(data)))
-      .catch((err) => dispatch(setError(err.message)));
+      .catch((error) => dispatch(setError(error.message)));
   };
