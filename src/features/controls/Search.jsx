@@ -1,9 +1,7 @@
 import styled from "styled-components";
 
 import { IoSearch } from "react-icons/io5";
-import { useSelector, useDispatch } from "react-redux";
-import { selectSearch } from "../store/controls/controls-selectors.js";
-import { setSearch } from "../store/controls/controls-actions.js";
+import { useSearch } from "./use-search";
 
 const InputContainer = styled.label`
   background-color: var(--colors-ui-base);
@@ -26,7 +24,7 @@ const Input = styled.input.attrs({
   type: "search",
   placeholder: "Search for a country...",
 })`
-  margin-left: 2rem;
+  margin-left: 0.6rem;
   border: none;
   outline: none;
   color: var(--color-text);
@@ -34,12 +32,7 @@ const Input = styled.input.attrs({
 `;
 
 export const Search = () => {
-  const dispatch = useDispatch();
-  const search = useSelector(selectSearch);
-
-  const handleSearch = (e) => {
-    dispatch(setSearch(e.target.value));
-  };
+  const [search, handleSearch] = useSearch();
 
   return (
     <InputContainer>
